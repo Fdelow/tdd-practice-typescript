@@ -5,6 +5,14 @@
   "main": "index.js",
   "author": "Owen HU",
   "license": "MIT",
+  "scripts": {
+    "cli": "ts-node src/cli.ts",
+    "test": "jest",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist build",
+    "ts-node": "ts-node"
+  },
   "devDependencies": {
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
